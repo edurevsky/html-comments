@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comments</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="comments">
+
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-author">John Doe</div>
+          <div class="header-separator"></div>
+          <small class="comment-time">00/00/0000 00:00:00</small>
+        </div>
+        <div class="comment-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt consequatur
+          eveniet praesentium velit dolore est corrupti numquam sint impedit voluptatem molestiae sapiente, at, maxime
+          magnam, natus amet alias voluptas perferendis?
+        </div>
+        <div class="comment">
+          <div class="comment-header">
+            <div class="comment-author">John Doe</div>
+            <div class="header-separator"></div>
+            <small class="comment-time">00/00/0000 00:00:00</small>
+          </div>
+          <div class="comment-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt consequatur
+            eveniet praesentium velit dolore est corrupti numquam sint impedit voluptatem molestiae sapiente, at, maxime
+            magnam, natus amet alias voluptas perferendis?
+          </div>
+          <div class="comment">
+            <div class="comment-header">
+              <div class="comment-author">John Doe</div>
+              <div class="header-separator"></div>
+              <small class="comment-time">00/00/0000 00:00:00</small>
+            </div>
+            <div class="comment-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt consequatur
+              eveniet praesentium velit dolore est corrupti numquam sint impedit voluptatem molestiae sapiente, at,
+              maxime
+              magnam, natus amet alias voluptas perferendis?
+            </div>
+          </div>
+        </div>
+        <div class="comment">
+          <div class="comment-header">
+            <div class="comment-author">John Doe</div>
+            <div class="header-separator"></div>
+            <small class="comment-time">00/00/0000 00:00:00</small>
+          </div>
+          <div class="comment-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt consequatur
+            eveniet praesentium velit dolore est corrupti numquam sint impedit voluptatem molestiae sapiente, at, maxime
+            magnam, natus amet alias voluptas perferendis?
+          </div>
+        </div>
+        <div class="comment">
+          <div class="comment-header">
+            <div class="comment-author">John Doe</div>
+            <div class="header-separator"></div>
+            <small class="comment-time">00/00/0000 00:00:00</small>
+          </div>
+          <div class="comment-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt consequatur
+            eveniet praesentium velit dolore est corrupti numquam sint impedit voluptatem molestiae sapiente, at, maxime
+            magnam, natus amet alias voluptas perferendis?
+          </div>
+        </div>
+      </div>
+  
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-author">John Doe</div>
+          <div class="header-separator"></div>
+          <small class="comment-time">00/00/0000 00:00:00</small>
+        </div>
+        <div class="comment-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt consequatur
+          eveniet praesentium velit dolore est corrupti numquam sint impedit voluptatem molestiae sapiente, at, maxime
+          magnam, natus amet alias voluptas perferendis?
+        </div>
+        <div class="comment">
+          <div class="comment-header">
+            <div class="comment-author">John Doe</div>
+            <div class="header-separator"></div>
+            <small class="comment-time">00/00/0000 00:00:00</small>
+          </div>
+          <div class="comment-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt consequatur
+            eveniet praesentium velit dolore est corrupti numquam sint impedit voluptatem molestiae sapiente, at, maxime
+            magnam, natus amet alias voluptas perferendis?
+          </div>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-author">John Doe</div>
+          <div class="header-separator"></div>
+          <small class="comment-time">00/00/0000 00:00:00</small>
+        </div>
+        <div class="comment-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt consequatur
+          eveniet praesentium velit dolore est corrupti numquam sint impedit voluptatem molestiae sapiente, at, maxime
+          magnam, natus amet alias voluptas perferendis?
+        </div>
+      </div>
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-author">John Doe</div>
+          <div class="header-separator"></div>
+          <small class="comment-time">00/00/0000 00:00:00</small>
+        </div>
+        <div class="comment-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt consequatur
+          eveniet praesentium velit dolore est corrupti numquam sint impedit voluptatem molestiae sapiente, at, maxime
+          magnam, natus amet alias voluptas perferendis?
+        </div>
+      </div>
+
+    </div> <!-- comments -->
+    
+  </div> <!-- container -->
+
+  <script>
+
+    const names = ["Henrique Carvalho", "Manuela Pereira", "Daniel Alvaréz", "Matheus Ferreira", "João Melo"]
+
+    function randomName() { 
+      return names[Math.floor(Math.random() * names.length)] 
+    }
+
+    const comment_times = document.querySelectorAll('.comment-time')
+    comment_times.forEach(c => c.textContent = new Date().toLocaleString())
+
+    const comment_authors = document.querySelectorAll('.comment-author')
+    comment_authors.forEach(c => c.textContent = randomName())
+
+  </script>
+
+</body>
+</html>

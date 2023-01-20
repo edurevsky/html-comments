@@ -1,0 +1,78 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 32px auto;
+}
+
+.comments {
+  padding: 12px 0;
+  border: 1px solid #6a6a6a;
+  border-radius: 8px;
+}
+
+.comment {
+  position: relative;
+  display: block;
+}
+
+.comment::before {
+  position: absolute;
+  content: '';
+  left: -8px;
+  width: 1px;
+  min-height: 100%;
+  background-color: #808080;
+}
+
+.comment:not(:first-child) {
+  margin-top: 8px;
+}
+
+.comment:nth-child(n) {
+  margin-left: 16px;
+}
+
+.comment-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-separator {
+  height: 1px;
+  width: 12px;
+}
+
+.header-separator::before {
+  height: inherit;
+  width: inherit;
+  content: '';
+  position: absolute;
+  background-color: #000;
+  top: 12px;
+}
+
+.comment-author {
+  font-weight: 600;
+  position: relative;
+  width: fit-content;
+}
