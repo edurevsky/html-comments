@@ -49,6 +49,14 @@ body {
   margin-left: 16px;
 }
 
+.hidden > .comment-content {
+  display: none;
+}
+
+.hidden:nth-child(n) > .comment {
+  display: none;
+}
+
 .comment-header {
   position: relative;
   display: flex;
@@ -68,11 +76,10 @@ body {
   content: '';
   position: absolute;
   background-color: #000;
-  top: 12px;
+  top: 55%;
 }
 
 .comment-author {
   font-weight: 600;
   position: relative;
-  width: fit-content;
 }
